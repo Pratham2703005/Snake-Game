@@ -55,6 +55,7 @@
     display: grid;
     width: 0;
     grid-template-rows: repeat(1fr,2fr,1fr);
+    gap: 7px;
     justify-content: center;
     box-sizing:unset;
     margin-top: 8%;
@@ -62,9 +63,9 @@
 
 }
 .tog{
-    margin-left: 18%;
+    margin-left: 14%;
     display: flex;
-    gap: 20%;
+    gap: 24%;
 }
 #up,
 #down,
