@@ -16,7 +16,12 @@
     align-items: center;
     overflow: hidden;
 }
-
+#scoreBox{
+    width: 50%;
+}
+#HighScoreBox{
+    width: 50%;
+}
 #board {
     background: linear-gradient(rgb(196, 245, 196), rgb(215, 170, 231));
     width: 90vmin;
@@ -67,7 +72,7 @@
 #left {
     /* padding-left: 50px; */
     
-    width: 20%;
+    width: 15%;
 }
 #up{
     margin-left: 30%;
@@ -90,7 +95,7 @@
     margin: 0 auto;
     display: flex;
     font-size: 2rem;
-    gap: 18%;
+    /* gap: 23%; */
     font-weight: 800;
     background: #9af97d;
     padding: 5px;
