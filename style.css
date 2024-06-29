@@ -17,10 +17,10 @@
     overflow: hidden;
 }
 #scoreBox{
-    width: 50%;
+    width: 40%;
 }
 #HighScoreBox{
-    width: 50%;
+    width: 60%;
 }
 #board {
     background: linear-gradient(rgb(196, 245, 196), rgb(215, 170, 231));
@@ -54,7 +54,7 @@
     gap: 1em;*/
     display: grid;
     width: 0;
-    grid-template-rows: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr,2fr,1fr);
     justify-content: center;
     box-sizing:unset;
     margin-top: 8%;
@@ -83,11 +83,13 @@
 }
 
 #right {
-    transform: rotateZ(90deg);
+    transform: rotateZ(90deg) scale(1.2);
+    
 }
 
 #left {
-    transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg) scale(1.2);
+    
 }
 
 .scores {
@@ -123,7 +125,7 @@
 /* Media query for max-width 600px */
 @media (max-width: 487px){
     .scores{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .body{
         width: 100vw;
