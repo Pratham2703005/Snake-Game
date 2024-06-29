@@ -7,7 +7,7 @@
 }
 
 .body {
-    background: url(bg1.jpg);
+    background: #1a1a2e;;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -29,8 +29,9 @@
 }
 
 .container {
-    max-width: 90%;
-    height: 70vh;
+    width: 90%;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .buttons {
@@ -122,8 +123,19 @@
     .body{
         width: 100vw;
         height: 100vw;
+        display: block;
     }
     .buttons{
+        width: 100vw;
+    }
+    #board{
+        width: 100vmin;
+        
+    }
+    .container,
+    .buttons,
+    .scores{
+        /* background-size: 100% 100%; */
         width: 100vw;
     }
 }
