@@ -3,7 +3,7 @@ const foodSound = new Audio('food.mp3');
 const gameOverSound = new Audio('gameover.mp3');
 const moveSound = new Audio('move.mp3');
 const musicSound = new Audio('music.mp3');
-let speed = 7;
+let speed = 10;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
@@ -57,7 +57,7 @@ function gameEngine(){
         if(score>hiscoreval){
             hiscoreval = score;
             localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
-            HighScoreBox.innerHTML = "High Score: " + hiscoreval;
+            HighScoreBox.innerHTML = "Best: " + hiscoreval;
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
@@ -135,7 +135,7 @@ if(hiscore === null){
 }
 else{
     hiscoreval = JSON.parse(hiscore);
-    HighScoreBox.innerHTML = "High Score: " + hiscore;
+    HighScoreBox.innerHTML = "Best: " + hiscore;
 }
 window.requestAnimationFrame(main);
 window.addEventListener('keydown',e=>{
