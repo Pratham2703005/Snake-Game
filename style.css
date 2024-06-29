@@ -55,11 +55,12 @@
     display: grid;
     width: 0;
     grid-template-rows: repeat(1fr,2fr,1fr);
-    gap: 10px;
+    gap: 0px;
     justify-content: center;
     box-sizing:unset;
-    margin: 8%;
-
+    
+    margin: 0;
+    
 }
 .tog{
     margin-left: 14%;
@@ -135,6 +136,8 @@
     }
     .buttons{
         width: 100vw;
+        margin: 8%;
+        gap: 10px;
     }
     #board{
         width: 100vmin;
